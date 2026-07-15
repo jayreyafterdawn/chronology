@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문학 작가 연대표</title>
+<!-- SNS 공유 미리보기(Open Graph) — 자체 호스팅 시 og:url과 og:image를 실제 절대 URL로 바꿔 주세요 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="문학 작가 연대표 — 인터랙티브 타임라인 모음">
+<meta property="og:description" content="한국문학·세계문학 작가들의 생애·전성기·주요 작품을 시대의 한 축 위에 그린 인터랙티브 연대표. 기획·제작 이정원 @jayr.eyafterdawn">
+<meta property="og:image" content="korea/og-thumbnail-kr.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="문학 작가 연대표 — 인터랙티브 타임라인 모음">
+<meta name="twitter:image" content="korea/og-thumbnail-kr.png">
+<style>
+  @font-face {
+    font-family: "GowunBatang";
+    src: url(data:font/woff;base64,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) format("woff");
+    font-weight: 700;
+    font-display: swap;
+  }
+  :root {
+    --surface: #fcfcfb;
+    --page: #f9f9f7;
+    --ink: #0b0b0b;
+    --ink2: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --border: rgba(11,11,11,0.10);
+    --accent: #e87ba4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface: #1a1a19; --page: #0d0d0d; --ink: #ffffff; --ink2: #c3c2b7;
+      --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,0.10);
+      --accent: #d55181;
+    }
+  }
+  :root[data-theme="dark"] {
+    --surface: #1a1a19; --page: #0d0d0d; --ink: #ffffff; --ink2: #c3c2b7;
+    --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,0.10);
+    --accent: #d55181;
+  }
+  :root[data-theme="light"] {
+    --surface: #fcfcfb; --page: #f9f9f7; --ink: #0b0b0b; --ink2: #52514e;
+    --muted: #898781; --grid: #e1e0d9; --border: rgba(11,11,11,0.10);
+    --accent: #e87ba4;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--page); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+      "Noto Sans KR", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 48px 24px 60px; }
+
+  .kicker {
+    font-size: 12px; letter-spacing: 0.22em; color: var(--muted);
+    text-transform: uppercase; margin: 0 0 10px;
+  }
+  h1 {
+    font-family: "GowunBatang", "Nanum Myeongjo", "AppleMyungjo", Batang, serif;
+    font-weight: 700; font-size: clamp(30px, 5.4vw, 44px);
+    margin: 0 0 12px; letter-spacing: -0.01em;
+  }
+  .sub { font-size: 14.5px; color: var(--ink2); margin: 0; max-width: 62ch; line-height: 1.65; }
+
+  .grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 22px; margin-top: 38px;
+  }
+  .card {
+    display: flex; flex-direction: column; text-decoration: none; color: inherit;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    overflow: hidden; transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+  }
+  .card:hover, .card:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+    border-color: var(--muted);
+  }
+  .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .thumb {
+    aspect-ratio: 1200 / 440; overflow: hidden; background: var(--grid);
+    border-bottom: 1px solid var(--border);
+  }
+  .thumb img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center bottom;
+    display: block;
+  }
+  .card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
+  .card-title { font-size: 16.5px; font-weight: 700; margin: 0; line-height: 1.4; }
+  .card-desc { font-size: 13px; color: var(--ink2); margin: 0; line-height: 1.6; flex: 1; }
+  .card-meta {
+    font-size: 12px; color: var(--muted); margin-top: 6px;
+    font-variant-numeric: tabular-nums; display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+  }
+  .card-meta .go { margin-left: auto; color: var(--accent); font-weight: 600; }
+
+  .credit {
+    margin: 44px 0 0; padding-top: 14px; font-size: 11.5px; color: var(--muted);
+    border-top: 1px solid var(--grid); letter-spacing: 0.02em;
+  }
+  .credit b { color: var(--ink2); font-weight: 600; }
+  .credit .handle { color: var(--muted); margin-left: 4px; text-decoration: none; }
+  .credit .handle:hover { color: var(--ink2); text-decoration: underline; }
+  .credit .handle::before { content: "· "; }
+
+  .top-actions { position: absolute; top: 18px; right: 22px; }
+  #themeBtn {
+    border: 1px solid var(--border); background: var(--surface); color: var(--ink2);
+    border-radius: 999px; width: 32px; height: 32px; cursor: pointer; font-size: 14px;
+    line-height: 1; font-family: inherit;
+  }
+  #themeBtn:hover { border-color: var(--muted); color: var(--ink); }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 40px 16px 48px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+<body>
+<div class="top-actions"><button id="themeBtn" title="테마 전환">◐</button></div>
+<div class="wrap">
+  <p class="kicker">Literary Timelines</p>
+  <h1>문학 작가 연대표</h1>
+  <p class="sub">작가들의 생애·전성기·주요 작품·노벨문학상을 시대의 한 축 위에 그린
+    인터랙티브 연대표 모음입니다. 연대표는 계속 추가됩니다.</p>
+
+  <div class="grid" id="cards"></div>
+
+  <p class="credit">기획·제작 — <b>이정원</b>
+    <a class="handle" href="https://www.instagram.com/jayr.eyafterdawn" target="_blank" rel="noopener">@jayr.eyafterdawn</a></p>
+</div>
+
+<script>
+// 새 연대표가 생기면 여기에 한 항목만 추가하면 됩니다.
+const TIMELINES = [
+  {
+    href: "korea/",
+    title: "한국문학 근현대 작가 연대표",
+    desc: "이광수부터 김초엽까지 — 개화기 신소설에서 오늘의 SF까지, 근현대 한국 문학 작가들을 한눈에.",
+    count: 178,
+    range: "1862 – 현재",
+    img: "korea/card.jpg",
+  },
+  {
+    href: "world/",
+    title: "세계문학 고전 작가 연대표",
+    desc: "호메로스부터 한강까지 — 고대 서사시에서 현대 소설까지, 세계문학의 고전 작가들을 한눈에.",
+    count: 174,
+    range: "BC 780 – 현재",
+    img: "world/card.jpg",
+  },
+];
+
+document.getElementById("cards").innerHTML = TIMELINES.map(t => `
+  <a class="card" href="${t.href}">
+    <div class="thumb"><img src="${t.img}" alt="${t.title} 미리보기" loading="lazy"></div>
+    <div class="card-body">
+      <h2 class="card-title">${t.title}</h2>
+      <p class="card-desc">${t.desc}</p>
+      <div class="card-meta">
+        <span>작가 ${t.count}인</span><span>·</span><span>${t.range}</span>
+        <span class="go">연대표 보기 →</span>
+      </div>
+    </div>
+  </a>`).join("");
+
+// 테마 토글: 자동 → 다크 → 라이트 (localStorage 유지)
+const order = ["auto", "dark", "light"];
+let theme = localStorage.getItem("lit-landing-theme") || "auto";
+function applyTheme() {
+  if (theme === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", theme);
+  document.getElementById("themeBtn").title =
+    { auto: "테마: 자동(OS 설정)", dark: "테마: 다크", light: "테마: 라이트" }[theme];
+}
+document.getElementById("themeBtn").addEventListener("click", () => {
+  theme = order[(order.indexOf(theme) + 1) % order.length];
+  localStorage.setItem("lit-landing-theme", theme);
+  applyTheme();
+});
+applyTheme();
+</script>
+</body>
+</html>

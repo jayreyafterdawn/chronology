@@ -1,0 +1,12 @@
+# 시스템·로컬 도구
+.DS_Store
+.claude/
+
+# 배포와 무관한 작업물
+주식트레이딩 백테스트/
+
+# 구버전·작업용 사본 (배포 제외)
+korea/og-thumbnail-kr_.png
+world/세계문학 고전 작가 연대표.html
+world/세계영화 거장 감독 연대표.html
+world/세계문학 작가 연대표.png
