@@ -85,13 +85,10 @@
   }
   .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .thumb {
-    aspect-ratio: 1200 / 440; overflow: hidden; background: var(--grid);
+    background: var(--grid);
     border-bottom: 1px solid var(--border);
   }
-  .thumb img {
-    width: 100%; height: 100%; object-fit: cover; object-position: center bottom;
-    display: block;
-  }
+  .thumb img { width: 100%; height: auto; display: block; }
   .card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
   .card-title { font-size: 16.5px; font-weight: 700; margin: 0; line-height: 1.4; }
   .card-desc { font-size: 13px; color: var(--ink2); margin: 0; line-height: 1.6; flex: 1; }
