@@ -2,17 +2,17 @@
 <html lang="ko">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>문학 작가 연대표</title>
+<title>연대표 — Chronology</title>
 <!-- SNS 공유 미리보기(Open Graph) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jayreyafterdawn.github.io/chronology/">
-<meta property="og:title" content="문학 작가 연대표 — 인터랙티브 타임라인 모음">
-<meta property="og:description" content="한국문학·세계문학 작가들의 생애·전성기·주요 작품을 시대의 한 축 위에 그린 인터랙티브 연대표. 기획·제작 이정원 @jayr.eyafterdawn">
-<meta property="og:image" content="https://jayreyafterdawn.github.io/chronology/korea/og-thumbnail-kr.png">
+<meta property="og:title" content="연대표 Chronology — 인터랙티브 타임라인 모음">
+<meta property="og:description" content="한국문학·세계문학·세계영화 — 역사 속 인물들의 생애·전성기·주요 작품을 시대의 한 축 위에 그린 인터랙티브 연대표. 기획·제작 이정원 @jayr.eyafterdawn">
+<meta property="og:image" content="https://jayreyafterdawn.github.io/chronology/korea-literature/og-thumbnail-kr.png">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="문학 작가 연대표 — 인터랙티브 타임라인 모음">
-<meta name="twitter:image" content="https://jayreyafterdawn.github.io/chronology/korea/og-thumbnail-kr.png">
+<meta name="twitter:title" content="연대표 Chronology — 인터랙티브 타임라인 모음">
+<meta name="twitter:image" content="https://jayreyafterdawn.github.io/chronology/korea-literature/og-thumbnail-kr.png">
 <style>
   @font-face {
     font-family: "GowunBatang";
@@ -126,9 +126,9 @@
 <body>
 <div class="top-actions"><button id="themeBtn" title="테마 전환">◐</button></div>
 <div class="wrap">
-  <p class="kicker">Literary Timelines</p>
-  <h1>문학 작가 연대표</h1>
-  <p class="sub">작가들의 생애·전성기·주요 작품·노벨문학상을 시대의 한 축 위에 그린
+  <p class="kicker">Chronology · Interactive Timelines</p>
+  <h1>연대표</h1>
+  <p class="sub">역사 속 인물들의 생애·전성기·주요 작품을 시대의 한 축 위에 그린
     인터랙티브 연대표 모음입니다. 연대표는 계속 추가됩니다.</p>
 
   <div class="grid" id="cards"></div>
@@ -141,20 +141,28 @@
 // 새 연대표가 생기면 여기에 한 항목만 추가하면 됩니다.
 const TIMELINES = [
   {
-    href: "korea/",
+    href: "korea-literature/",
     title: "한국문학 근현대 작가 연대표",
     desc: "이광수부터 김초엽까지 — 개화기 신소설에서 오늘의 SF까지, 근현대 한국 문학 작가들을 한눈에.",
-    count: 178,
+    people: "작가 178인",
     range: "1862 – 현재",
-    img: "korea/card.jpg",
+    img: "korea-literature/card.jpg",
   },
   {
-    href: "world/",
+    href: "world-literature/",
     title: "세계문학 고전 작가 연대표",
     desc: "호메로스부터 한강까지 — 고대 서사시에서 현대 소설까지, 세계문학의 고전 작가들을 한눈에.",
-    count: 174,
+    people: "작가 174인",
     range: "BC 780 – 현재",
-    img: "world/card.jpg",
+    img: "world-literature/card.jpg",
+  },
+  {
+    href: "world-cinema/",
+    title: "세계영화 거장 감독 연대표",
+    desc: "멜리에스부터 오늘의 거장까지 — 영화의 발명에서 현재에 이르는 세계 영화 감독들을 한눈에.",
+    people: "감독 136인",
+    range: "1861 – 현재",
+    img: "world-cinema/card.jpg",
   },
 ];
 
@@ -165,7 +173,7 @@ document.getElementById("cards").innerHTML = TIMELINES.map(t => `
       <h2 class="card-title">${t.title}</h2>
       <p class="card-desc">${t.desc}</p>
       <div class="card-meta">
-        <span>작가 ${t.count}인</span><span>·</span><span>${t.range}</span>
+        <span>${t.people}</span><span>·</span><span>${t.range}</span>
         <span class="go">연대표 보기 →</span>
       </div>
     </div>
