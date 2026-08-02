@@ -9,6 +9,7 @@
 | [한국문학 근현대 작가 연대표](korea-literature/) | 한국 문학 작가 178인 | 1862 – 현재 |
 | [세계문학 고전 작가 연대표](world-literature/) | 세계문학 작가 174인 | BC 780 – 현재 |
 | [세계영화 거장 감독 연대표](world-cinema/) | 세계 영화감독 136인 | 1861 – 현재 |
+| [이탈리아 르네상스 인물 연대표](renaissance/) | 르네상스 인물 58인 | 1265 – 1612 |
 
 연대표는 계속 추가됩니다.
 
@@ -27,6 +28,7 @@ index.html                  # 랜딩 — 연대표 목록 (새 연대표는 TIME
 korea-literature/index.html # 한국문학 근현대 작가 연대표
 world-literature/index.html # 세계문학 고전 작가 연대표
 world-cinema/index.html     # 세계영화 거장 감독 연대표
+renaissance/index.html      # 이탈리아 르네상스 인물 연대표
 ```
 
 ---
