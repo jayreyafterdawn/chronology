@@ -133,6 +133,8 @@
     outline: 2px solid var(--c-pai); outline-offset: 2px;
   }
   .chip.reset { color: var(--ink2); }
+  a.chip.home { text-decoration: none; color: var(--ink2); }
+  a.chip.home:hover { color: var(--ink); }
   #searchBox {
     border: 1px solid var(--border); background: var(--surface); color: var(--ink);
     border-radius: 999px; padding: 5px 13px; font-size: 12.5px; font-family: inherit;
@@ -338,6 +340,7 @@
 <div class="wrap">
   <header class="page-head">
     <div class="top-actions">
+      <a class="chip home" href="../" title="연대표 홈으로">← Chronology</a>
       <input type="search" id="searchBox" placeholder="인물 검색" autocomplete="off">
       <button type="button" class="chip" id="compactBtn" aria-pressed="false">컴팩트</button>
       <button type="button" class="chip" id="exportBtn">PNG로 저장</button>
